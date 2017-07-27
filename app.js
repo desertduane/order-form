@@ -5,7 +5,7 @@
 function Product(name) {
   this.name = name;
   this.source = 'img/' + this.name + '.jpg';  //this is the source of the images for the website
-  this.timesClicked = 0;
+  this.quantityOrdered = 0;
   Product.all.push(this);
 }
 Product.totalClicks = 0;
@@ -14,11 +14,39 @@ Product.allNames = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegu
 
 for(var i = 0; i < Product.allNames.length; i++){
   new Product(Product.allNames[i]);
+
+
+function Customer(name, street, zip, cCard){
+  this.name = name;
+  this.street = street;
+  this.zip = zip;
+  this.cCard = cCard;
+  Customer.info.push(this);
+}
+Customer.info.push(this);
+
+
+
+
+
+
+
+}
+// +++++++++++++++++++++++++++++++++order form++++++++++++++++++++
+function somehting(){
+
 }
 
 
-// +++++++++++++++++++++++++++++++++order form++++++++++++++++++++
-document.getElementById('id')item from pull down
+
+
+
+
+
+
+
+
+
 
 function handleClick(e){
   localStorage.userClickInfo = JSON.stringify(Image.all);//++stringify HERE+++++
@@ -26,8 +54,11 @@ function handleClick(e){
   Image.totalClicks += 1;
   for(var i = 0; i < Image.all.length; i++){
     if(e.target.alt === Image.all[i].name){
-      Image.all[i].timesClicked++;
+      Image.all[i].quantityOrdered++;
       jsonImageClicks.push(Image.all[i]);//+++++++++collects the Parse from JSON++++++++++++++++++
     }
   }
 }
+
+//+++++++++++++++++++++++++++++EVENT HANDLER+++++++++++++++++
+document.getElementById('submit').addEventListener('click', FORMWHATEVER)
