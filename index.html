@@ -7,31 +7,32 @@
   </head>
   <body>
     <h1>Bus Mall Order Form</h1>
-    <form id="order-form">
+    <form id="orderForm">
       <fieldset>
         <legend>Place your order here!</legend>
-        <select>
-          <option>R2D2 Bag</option>
-          <option>Banana Slicer</option>
-          <option>Ipad tp stand</option>
-          <option>Special Boots</option>
-          <option>All in one breakfast</option>
-          <option>Meatball Gum</option>
-          <option>Red Chair</option>
-          <option>Cthulhu toy</option>
-          <option>Dog Duck bill</option>
-          <option>Dragon Meat</option>
-          <option>Utencil Pen</option>
-          <option>Pet Sweep</option>
-          <option>Pizza Scissors</option>
-          <option>Shark Sleeping Bag</option>
-          <option>Baby Sweep</option>
-          <option>Tauntaun Sleeping Bag</option>
-          <option>Unicorn Meat</option>
-          <option>Tenticle Usb</option>
-          <option>Watering Can</option>
-          <option>Wine Glass</option>
+        <select for="products" name="productList">
+          <option value="bag">R2D2 Bag</option>
+          <option value="banana">Banana Slicer</option>
+          <option value="bathroom">Ipad tp stand</option>
+          <option value="boots">Special Boots</option>
+          <option value="breakfast">All in one breakfast</option>
+          <option value="bubblegum">Meatball Gum</option>
+          <option value="chair">Red Chair</option>
+          <option value="cthulhu">Cthulhu toy</option>
+          <option value="dog-duck">Dog Duck bill</option>
+          <option value="dragon">Dragon Meat</option>
+          <option value="pen">Utencil Pen</option>
+          <option value="pet-sweep">Pet Sweep</option>
+          <option value="scissors">Pizza Scissors</option>
+          <option value="shark">Shark Sleeping Bag</option>
+          <option value="sweep">Baby Sweep</option>
+          <option value="tauntaun">Tauntaun Sleeping Bag</option>
+          <option value="unicorn">Unicorn Meat</option>
+          <option value="usb">Tenticle Usb</option>
+          <option value="water-can">Watering Can</option>
+          <option value="wine-glass">Wine Glass</option>
         </select>
+
         <label for="quantity"> Quantity: </label>
         <input type="number" name="quantity" minimum="1"/>
 
@@ -44,12 +45,12 @@
         <label for="address2">Address State/ZIP code: </label>
         <input type="text" name="address2" />
 
-        <label for="cardnumber">Credit Card Number: </label>
-        <input type="number" name="cardnumber" max="9999999999999999"/>
+        <label for="cardNumber">Credit Card Number: </label>
+        <input type="number" name="cardNumber" max="9999999999999999"/>
 
+        <button type="submit">Add to Cart</button>
       </fieldset>
     </form>
-    <button type="submit">Add to Cart</button>
 
 <script src="app.js"></script>
   </body>
