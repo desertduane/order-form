@@ -35,10 +35,12 @@ function Order(products, quantity, name, address, address2, cardNumber){
   this.products = products;
   this.quantity = quantity;
   this.name = name;
+
   this.address = address;
   this.address2 = address2;
   this.cardNumber = cardNumber;
   Order.all.push(this);
+
 }
 Order.all = [];
 
@@ -71,11 +73,56 @@ orderForm.addEventListener('submit', orderSubmit);
 
 
 
+for(var i = 0; i < Product.allNames.length; i++){
+  new Product(Product.allNames[i]);
+
+
+function Customer(name, street, zip, cCard){
+  this.name = name;
+  this.street = street;
+  this.zip = zip;
+  this.cCard = cCard;
+  Customer.info.push(this);
+}
+Customer.info.push(this);
 
 
 
-// function orderSubmit(){
-//   console.log('order placed');
-//   var newOrder = new Order(products, quantity, name, address, address2, cardNumber);
-//   Order.all.push(newOrder);
-// }
+
+
+
+
+}
+// +++++++++++++++++++++++++++++++++order form++++++++++++++++++++
+function somehting(){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Image.totalClicks += 1;
+  for(var i = 0; i < Image.all.length; i++){
+    if(e.target.alt === Image.all[i].name){
+      Image.all[i].quantityOrdered++;
+      jsonImageClicks.push(Image.all[i]);//+++++++++collects the Parse from JSON++++++++++++++++++
+    }
+  }
+}
+
+//+++++++++++++++++++++++++++++EVENT HANDLER+++++++++++++++++
+document.getElementById('submit').addEventListener('click', FORMWHATEVER)
+
