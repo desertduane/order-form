@@ -3,10 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Order Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="stylesheet" href="style.css"
   </head>
   <body>
+    <h1>Bus Mall Order Form</h1>
+    <form id="order-form">
+      <fieldset>
+        <legend>Place your order here!</legend>
+        <select>
+          <option>R2D2 Bag</option>
+          <option>Banana Slicer</option>
+          <option>Ipad tp stand</option>
+          <option>Special Boots</option>
+          <option>All in one breakfast</option>
+          <option>Meatball Gum</option>
+          <option>Red Chair</option>
+          <option>Cthulhu toy</option>
+          <option>Dog Duck bill</option>
+          <option>Dragon Meat</option>
+          <option>Utencil Pen</option>
+          <option>Pet Sweep</option>
+          <option>Pizza Scissors</option>
+          <option>Shark Sleeping Bag</option>
+          <option>Baby Sweep</option>
+          <option>Tauntaun Sleeping Bag</option>
+          <option>Unicorn Meat</option>
+          <option>Tenticle Usb</option>
+          <option>Watering Can</option>
+          <option>Wine Glass</option>
+        </select>
+        <label for="quantity"> Quantity: </label>
+        <input type="number" name="quantity" minimum="1"/>
 
-    <script src="app.js"></script>
+        <label for="name">Name: </label>
+        <input type="text" name="name" />
+
+        <label for="address">Address Street/City: </label>
+        <input type="text" name="address" />
+
+        <label for="address2">Address State/ZIP code: </label>
+        <input type="text" name="address2" />
+
+        <label for="cardnumber">Credit Card Number: </label>
+        <input type="number" name="cardnumber" max="9999999999999999"/>
+
+      </fieldset>
+    </form>
+    <button type="submit">Add to Cart</button>
+
+<script src="app.js"></script>
   </body>
 </html>
