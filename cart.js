@@ -3,7 +3,7 @@
 var cartFormArray = [];
 
 
-if(localStorage.length > 0){
+if(localStorage.userFormInfo){
   cartFormArray = JSON.parse(localStorage.userFormInfo);
 };
 
@@ -17,3 +17,8 @@ function showList(){
   }
 }
 showList();
+function clearStorage() {
+  localStorage.clear();
+  window.location.reload(true);
+}
+document.getElementById('button').addEventListener('click', clearStorage);

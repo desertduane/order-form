@@ -19,9 +19,9 @@ function userFormData(e){
   orderFormArray.push(userInputAddress2);
   orderFormArray.push(userInputCardNumber);
 
+  localStorage.userFormInfo = JSON.stringify(orderFormArray);
 }
 
-localStorage.userFormInfo = JSON.stringify(orderFormArray);
 
 
 
