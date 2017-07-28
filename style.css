@@ -1,23 +1,26 @@
-* {
-  /*border: 2px dotted red;*/
-}
 
 body {
+  background-color: #221ccc;
   max-width: 85%;
   margin: 0px auto;
 }
 
 h1 {
+  color: white;
   font-size: 40px;
 
 }
 
 form {
+  color: white;
   height: 400px;
 }
 
 fieldset {
-  height: 300px;
+  border-radius: 10px;
+  background-color: #437c1d;
+  height: 350px;
+  width: 200px;
 }
 
 select {
