@@ -17,7 +17,7 @@ function showList(){
   }
 }
 showList();
-function clearStorage() {
+function clearStorage() {   //clear cart function
   localStorage.clear();
   window.location.reload(true);
 }

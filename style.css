@@ -31,3 +31,10 @@ label {
   font-size: 18px;
   padding-left: 5px;
 }
+li{
+  color: white;
+}
+ul{
+  background-color: #437c1d;
+  width: 200px;
+}

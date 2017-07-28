@@ -19,9 +19,9 @@ function userFormData(e){
   orderFormArray.push(userInputAddress2);
   orderFormArray.push(userInputCardNumber);
 
+//Fill all fields warning
   if(!document.getElementById('quantity').value || !document.getElementById('name').value || !document.getElementById('address').value || !document.getElementById('address2').value || !document.getElementById('cardNumber').value) {
     return alert('Fill out all fields');
-    localStorage.clear();
   }
 
   localStorage.userFormInfo = JSON.stringify(orderFormArray);
