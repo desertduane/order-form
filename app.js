@@ -1,6 +1,4 @@
 'use strict';
-<<<<<<< HEAD
-=======
 
 var orderFormArray = [];
 // }
@@ -20,10 +18,10 @@ function userFormData(e){
   orderFormArray.push(userInputAddress1);
   orderFormArray.push(userInputAddress2);
   orderFormArray.push(userInputCardNumber);
-  localStorage.userFormInfo = JSON.stringify(orderFormArray);
 
 }
 
+localStorage.userFormInfo = JSON.stringify(orderFormArray);
 
 
 
@@ -31,4 +29,3 @@ document.getElementById('orderForm').addEventListener('submit', userFormData);
 
 // userFormData();
 // storeInArray();
->>>>>>> 6c789c467e5e92c74426a96b184d8277000d6cbf
