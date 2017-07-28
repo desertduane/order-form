@@ -6,11 +6,11 @@
  <link rel="stylesheet" href="style.css"
   </head>
   <body>
-    <h1>Bus Mall Order Form</h1>
+    <h1>Bus<em>Mall</em> Order Form</h1>
     <form id="orderForm">
       <fieldset>
         <legend>Place your order here!</legend>
-        <select for="products" name="productList">
+        <select id="productList" for="products" name="productList">
           <option value="bag">R2D2 Bag</option>
           <option value="banana">Banana Slicer</option>
           <option value="bathroom">Ipad tp stand</option>
@@ -34,25 +34,25 @@
         </select>
 
         <label for="quantity"> Quantity: </label>
-        <input type="number" name="quantity" minimum="1"/>
+        <input id="quantity" type="number" name="quantity" minimum="1"></input>
 
         <label for="name">Name: </label>
-        <input type="text" name="name" />
+        <input id="name" type="text" name="name"></input>
 
         <label for="address">Address Street/City: </label>
-        <input type="text" name="address" />
+        <input id="address" type="text" name="address"></input>
 
         <label for="address2">Address State/ZIP code: </label>
-        <input type="text" name="address2" />
+        <input id="address2" type="text" name="address2"></input>
 
         <label for="cardNumber">Credit Card Number: </label>
-        <input type="number" name="cardNumber" max="9999999999999999"/>
+        <input id="cardNumber" type="number" name="cardNumber" max="9999999999999999"></input>
 
-        <button type="submit">Add to Cart</button>
       </fieldset>
+      <button id="button" type="submit" name="submitToCart">Add to Cart</button>
     </form>
 
-    <button  type="submit" name="submitToCart">Add to Cart</button>
+    <!-- <button onclick="userFormData()">Add to Cart</button> -->
 
 
 
