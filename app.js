@@ -1,4 +1,6 @@
 'use strict';
+<<<<<<< HEAD
+=======
 
 var orderFormArray = [];
 // }
@@ -29,3 +31,4 @@ document.getElementById('orderForm').addEventListener('submit', userFormData);
 
 // userFormData();
 // storeInArray();
+>>>>>>> 6c789c467e5e92c74426a96b184d8277000d6cbf
